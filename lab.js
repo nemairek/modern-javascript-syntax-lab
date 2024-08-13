@@ -79,3 +79,75 @@ const userProfile = {
 
 // console.log(userProfile)
 
+
+
+import {noun, adjective} from './exportingFile.js';
+
+// console.log('The', noun, 'is', adjective);
+
+
+// Convert the following `if...else` statement in to a ternary:
+
+let pizza = 'tasty';
+
+// if (pizza === 'tasty') {
+//   console.log('yum');
+// } else {
+//   console.log('yuck');
+// }
+
+// Your code here
+
+
+let flavor = pizza === 'tasty' ? 'yum' : 'yuck' ;
+
+
+// console.log(flavor)
+
+// 1. SET LANGUAGE
+
+// Construct a single line of code that assigns a default value using the logical OR operator. This line should match the logic of the following statement: 
+
+// "LANG is equal to localLangConfig or the default value of English."
+
+const localLangConfig = null;  // Change to 'es', 'fr', etc., or keep it null
+
+// a. Create a variable called LANG
+// b. Assign LANG the value of localLangConfig or 'en' as a default
+
+// Your code here
+
+const LANG = 'japanese' && localLangConfig
+
+
+
+
+// Log the result
+// console.log('Language setting:', LANG);
+
+
+// 2. SET WEBSITE THEME
+
+const userSavedTheme = null; // Change to 'dark', 'contrast', etc., or keep it null
+
+// a. Create a variable called USER_THEME
+// b. Assign USER_THEME the value of userSavedTheme or 'light' as a default
+
+// Your code here
+
+const USER_THEME = 'light' || 'dark'
+
+
+// Log the result
+// console.log('User theme setting:', USER_THEME);
+
+
+// Now check for `cat.age` on `adventurer`. See how it errors out? Use optional chaining in a console.log that it returns undefined instead.
+
+const adventurer = {
+  name: 'Alice',
+};
+
+let cat = adventurer.cat?.name; // Your code here
+
+// console.log(cat);
